@@ -28,17 +28,16 @@ header{
 }
 
 section{
-    width: 100%;
-    height: 768px;
+    width: auto;
+    height: 716px;
     display: flexbox;
-    
+    margin-bottom: 55px;
 }
 
 .text-1{
     padding: 30px;
     text-align: center;
-    height: 25%;
-    border: solid 1px black;
+    height: 18%;
     border-radius: 1rem;
     margin-top: 2px;
     display: flex;
@@ -49,18 +48,55 @@ section{
 .img-1{
     display: flex;
     height: 200px;
-    height: 25%;
-    justify-content: center;
-    border: solid 1px black;
+    justify-content: space-around;
     border-radius: 1rem; 
-    margin-top: 2px;   
+    margin-top: 2px;
+}
+
+.img-img-1{
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: transform .5s;
+}
+
+.img-img-1:hover{
+    transform: scale(1.5);
+}
+
+.img-img-2{
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: transform .5s;
+}
+
+.img-img-2:hover{
+    transform: scale(1.5);
+}
+
+.img-img-3{
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: transform .5s;
+}
+
+.img-img-3:hover{
+    transform: scale(1.5);
+}
+
+.img-img-4{
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: transform .5s;
+}
+
+.img-img-4:hover{
+    transform: scale(1.5);
 }
 
 .text-2{
     padding: 30px;
     text-align: end;
     height: 25%;
-    border: solid 1px black;
     border-radius: 1rem;
     margin-top: 2px;
     display: flex;
@@ -72,15 +108,50 @@ section{
 .img-2{
     display: flex;
     height: 200px;
-    height: 25%;
-    justify-content: center;
-    border: solid 1px black;
-    border-radius: 1rem;
+    justify-content: space-around;
+    border-radius: 1rem; 
     margin-top: 2px;
 }
 
+.img-img-5{
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: transform .5s;
+}
 
+.img-img-5:hover{
+    transform: scale(1.5);
+}
 
+.img-img-6{
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: transform .5s;
+}
+
+.img-img-6:hover{
+    transform: scale(1.5);
+}
+
+.img-img-7{
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: transform .5s;
+}
+
+.img-img-7:hover{
+    transform: scale(1.5);
+}
+
+.img-img-8{
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: transform .5s;
+}
+
+.img-img-8:hover{
+    transform: scale(1.5);
+}
 
 footer{
     display: flex;
@@ -88,87 +159,75 @@ footer{
     width: 100%;
     background-color: chartreuse;
     position: absolute;
-    margin-bottom: 0px;
+    margin-bottom: 0%;
+    margin-top: 53px;
 }
 
-@media screen and (max-width: 799px) {
-    .grid{
-        grid-template-columns: 1fr;
-    }
+/** Index para celular **/
+
+@media screen and (min-width: 350px) and (max-width: 1200px){
+    
     .grid-container{
-        grid-template-columns: 100%;
-        grid-template-rows: 80px 70px 150px 200px 150px 100px 100px;
-        grid-template-areas:
-        "header "
-        "nav"
+        display: grid;
+        grid-template-areas: 
         "text-1"
         "img-1"
-        "text-2"
         "img-2"
+        "text-2"
+        "img-7"
+        "img-8"
         "footer"
         ;
-        row-gap: 2px;
-    }
-    /**       selector en grilla        **/
-    header{
-        grid-area: header;
-    }
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto;
 
-    .nav{
-        grid-area: nav;
     }
 
     .text-1{
         grid-area: text-1;
+        width: auto;
     }
 
-    .img-1{
+    .img-img-1{
         grid-area: img-1;
+    }
+
+    .img-img-2{
+        grid-area: img-2;
     }
 
     .text-2{
         grid-area: text-2;
-        
+        width: 100%;
     }
 
-    .img-2{
-        grid-area: img-2;
+    .img-img-7{
+        grid-area: img-7;
     }
 
+    .img-img-8{
+        grid-area: img-8;
+    }
+    
     footer{
         grid-area: footer;
     }
-
-    /**              **/
-
-    .text-1{
-        justify-content: center;
-    }
-
-    .img-1{
-        justify-content: center;
-    }
-
-    .text-2{
-        justify-content: center;
-    }
-    
-    .img-2{
-        justify-content: center;
-    }
-    
-    footer{
-        
-    }
 }
 
+
 /**  Html registro **/
+
+.section-registro{
+    height: 770px;
+    margin-bottom: 0%;
+}
 
 .fondo-form-registro{
     background-image: url(../img/plantita.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
+    height: 770px;
 }
 
 .div-form-registro{
@@ -179,6 +238,10 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.footer-registro{
+    margin-top: 0%;
 }
 
 
@@ -194,6 +257,8 @@ footer{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
+    height: 770px;
+    margin-bottom: 0%;
 }
 
 .form-contacto{
@@ -212,13 +277,20 @@ form div{
     margin-right: 30px;
 }
 
+.footer-contacto{
+    margin-top: 0%;
+}
+
 
 
 /** Aceites **/
 
+
+
 .section-aceites{
     display: block;
     height: auto;
+    margin-bottom: 0%;
 }
 
 .thc-cbd{
@@ -226,28 +298,37 @@ form div{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
-    border-radius: 20px;
-    
     width: 100%;
+    margin-top: 15px;
+    
 }
 
 .titulo-thc-cbd{
     margin-bottom: 5px;
+    height: auto;
 }
 
 .text-thc-cbd{
     margin-left: 20px;
+    height: auto;
+    margin-left: 250px;
+    margin-right: 250px;
+    transition: transform .6s;
 }
+
+.text-thc-cbd:hover{
+    transform: scale(1.1);
+}
+
 
 .beneficio-uso{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
-    border-radius: 20px;
     width: 100%;
+    margin-top: 15px;
+    
 }
 
 .div-beneficios{
@@ -255,6 +336,16 @@ form div{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: 250px;
+    margin-right: 250px;
+    height: auto;
+    transition: transform .6s;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.div-beneficios:hover{
+    transform: scale(1.1);
 }
 
 
@@ -263,7 +354,100 @@ form div{
     justify-content: center;
     width: 100%;
     background-color: chartreuse;
-    margin-top: 10px;
     position: absolute;
-    margin-top: 0px;
+    margin-bottom: 0%;
+}
+
+/** Reprocann **/
+
+.section-repro{
+    display: block;
+    height: 647px;
+}
+
+.repro-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.titulo-repro{
+    margin-bottom: 5px;
+    height: auto;
+}
+
+.que-repro{
+    margin-left: 20px;
+    height: auto;
+    margin-left: 250px;
+    margin-right: 250px;
+    transition: transform .6s;
+}
+
+.que-repro:hover{
+    transform: scale(1.1);
+}
+
+.titulo-cant-plantas{
+    margin-bottom: 5px;
+    height: auto;
+}
+
+.cant-plantas{
+    margin-left: 20px;
+    height: auto;
+    margin-left: 250px;
+    margin-right: 250px;
+    transition: transform .6s;
+}
+
+.cant-plantas:hover{
+    transform: scale(1.1);
+}
+
+.titulo-transporte{
+    margin-bottom: 5px;
+    height: auto;
+}
+
+.transporte{
+    margin-left: 20px;
+    height: auto;
+    margin-left: 250px;
+    margin-right: 250px;
+    transition: transform .6s;
+}
+
+.transporte:hover{
+    transform: scale(1.1);
+}
+
+.titulo-vigencia{
+    margin-bottom: 5px;
+    height: auto;
+}
+
+.vigencia{
+    margin-left: 20px;
+    height: auto;
+    margin-left: 250px;
+    margin-right: 250px;
+    transition: transform .6s;
+}
+
+.vigencia:hover{
+    transform: scale(1.1);
+}
+
+.footer-repro{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: chartreuse;
+    position: absolute;
+    margin-bottom: 0%;
 }
