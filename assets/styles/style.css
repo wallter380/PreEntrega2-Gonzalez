@@ -95,7 +95,7 @@ section{
 
 .text-2{
     padding: 30px;
-    text-align: end;
+    text-align: center;
     height: 25%;
     border-radius: 1rem;
     margin-top: 2px;
@@ -167,15 +167,15 @@ footer{
 
 @media screen and (min-width: 350px) and (max-width: 1200px){
     
-    .grid-container{
+    .grid-container{  
         display: grid;
         grid-template-areas: 
+        "header"
+        "nav"
         "text-1"
         "img-1"
-        "img-2"
         "text-2"
-        "img-7"
-        "img-8"
+        "img-2"
         "footer"
         ;
         grid-template-columns: 1fr;
@@ -183,34 +183,48 @@ footer{
 
     }
 
+    header{
+        grid-area: header;
+    }
+
+    nav{
+        grid-area: nav;
+    }
+
     .text-1{
         grid-area: text-1;
         width: auto;
+        display: flex;
+        margin-top: 40px;
+        margin-bottom: 20px;
     }
 
-    .img-img-1{
+    .img-1{
         grid-area: img-1;
-    }
-
-    .img-img-2{
-        grid-area: img-2;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
 
     .text-2{
         grid-area: text-2;
         width: 100%;
+        margin-top: 40px;
     }
 
-    .img-img-7{
-        grid-area: img-7;
-    }
-
-    .img-img-8{
-        grid-area: img-8;
-    }
+    .img-2{
+        grid-area: img-2;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }    
     
     footer{
         grid-area: footer;
+        display: flex;
+        position: absolute;
+        margin-bottom: 0%;
+        margin-top: 900px;
     }
 }
 
