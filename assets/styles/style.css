@@ -228,6 +228,80 @@ footer{
     }
 }
 
+/** Reprocann para celular **/
+
+@media screen and (min-width: 350px) and (max-width: 1200px){
+    
+    .grid-container-repro{  
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "titu-repro"
+        "que-repro"
+        "titu-cant-plantas"
+        "cant-plantas"
+        "titu-trans"
+        "trans"
+        "titu-vig"
+        "vig"
+        "footer"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
+
+    }
+
+    header{
+        grid-area: header;
+    }
+
+    nav{
+        grid-area: nav;
+    }
+
+    .titulo-repro{
+        grid-area: titu-repro;
+    }
+
+    .que-repro{
+        grid-area: que-repro;
+    }
+
+    .titulo-cant-plantas{
+        grid-area: titu-cant-plantas;
+    }
+
+    .cant-plantas{
+        grid-area: cant-plantas;
+    }
+
+    .titulo-transporte{
+        grid-area: titu-trans;
+    }
+
+    .transporte{
+        grid-area: trans;
+    }
+
+    .titulo-vigencia-repro{
+        grid-area: titu-vig;
+    }
+
+    .vigencia{
+        grid-area: vig;
+    }
+    
+    
+    footer{
+        grid-area: footer;
+        display: flex;
+        position: absolute;
+        margin-bottom: 0%;
+        margin-top: 850px;
+    }
+}
+
 
 /**  Html registro **/
 
