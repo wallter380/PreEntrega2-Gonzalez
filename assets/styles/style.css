@@ -3,7 +3,8 @@
     padding: 0px;
 }
 
-/** Index **/
+/**
+ Index **/
 
 header{
     display: flex;
@@ -48,7 +49,6 @@ section{
 .img-1{
     display: flex;
     height: 200px;
-    justify-content: space-around;
     border-radius: 1rem; 
     margin-top: 2px;
 }
@@ -57,6 +57,7 @@ section{
     border: 1px solid black;
     border-radius: 10px;
     transition: transform .5s;
+    margin-left: 450px;
 }
 
 .img-img-1:hover{
@@ -67,29 +68,10 @@ section{
     border: 1px solid black;
     border-radius: 10px;
     transition: transform .5s;
+    margin-left: 350px;
 }
 
 .img-img-2:hover{
-    transform: scale(1.5);
-}
-
-.img-img-3{
-    border: 1px solid black;
-    border-radius: 10px;
-    transition: transform .5s;
-}
-
-.img-img-3:hover{
-    transform: scale(1.5);
-}
-
-.img-img-4{
-    border: 1px solid black;
-    border-radius: 10px;
-    transition: transform .5s;
-}
-
-.img-img-4:hover{
     transform: scale(1.5);
 }
 
@@ -108,35 +90,15 @@ section{
 .img-2{
     display: flex;
     height: 200px;
-    justify-content: space-around;
     border-radius: 1rem; 
     margin-top: 2px;
-}
-
-.img-img-5{
-    border: 1px solid black;
-    border-radius: 10px;
-    transition: transform .5s;
-}
-
-.img-img-5:hover{
-    transform: scale(1.5);
-}
-
-.img-img-6{
-    border: 1px solid black;
-    border-radius: 10px;
-    transition: transform .5s;
-}
-
-.img-img-6:hover{
-    transform: scale(1.5);
 }
 
 .img-img-7{
     border: 1px solid black;
     border-radius: 10px;
     transition: transform .5s;
+    margin-left: 500px;
 }
 
 .img-img-7:hover{
@@ -147,6 +109,7 @@ section{
     border: 1px solid black;
     border-radius: 10px;
     transition: transform .5s;
+    margin-left: 350px;
 }
 
 .img-img-8:hover{
@@ -331,9 +294,6 @@ footer{
 .footer-registro{
     margin-top: 0%;
 }
-
-
-
 
 /**  Contacto  **/
 
@@ -539,3 +499,10 @@ form div{
     position: absolute;
     margin-bottom: 0%;
 }
+
+
+/**  pseudoclase para los A visitados  **/
+
+.active {
+    background-color: rgb(99, 231, 143);
+} 
